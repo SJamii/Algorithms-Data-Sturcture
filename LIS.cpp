@@ -1,3 +1,4 @@
+// Time Complexity : O(nlog(n))
 #include<bits/stdc++.h>
 using namespace std;
 int lis(int ara[],int n)
