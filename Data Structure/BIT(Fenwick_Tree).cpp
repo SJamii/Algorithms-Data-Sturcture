@@ -1,11 +1,14 @@
+// Bismillahir Rahmanir Rahim
+// Time Complexity- O(log(n))
+
 #include<bits/stdc++.h>
 using namespace std;
-#define max 10000
+#define max 100000
 int ara[max];
 int tree[max];
 int update(int idx,int val,int n)
 {
-	while(ind <= n)
+	while(idx <= n)
 	{
 		tree[idx] += val;
 		idx += (idx & -idx);
@@ -21,6 +24,10 @@ int query(int idx)
 		idx -= (idx & -idx);
 	}
 	return sum;
+}
+int rangeSum(int l,int r)
+{
+	return query(r)-query(l-1);
 }
 void print(int *ara,int n)
 {
