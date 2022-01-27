@@ -1,3 +1,7 @@
+#Time Complexity: O(n)
+#Space Complexity: O(m)
+
+
 #include<bits/stdc++.h>
 using namespace std;
 vector<int> makelps(string pattern)
