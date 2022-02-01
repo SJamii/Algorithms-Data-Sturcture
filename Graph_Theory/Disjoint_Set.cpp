@@ -18,7 +18,7 @@ int find(int r)
     return root[r] = find(root[r]);
 }
 
-void Union(int a, int b)
+void union(int a, int b)
 {
     int u = find(a);
     int v = find(b);
@@ -35,13 +35,10 @@ bool connected(int x,int y)
 }
 int main()
 {
-
-    makeset();
-
-	makeset();
-	Union(1,2);
-	Union(2,3);
-	cout<<connected(1,3); //returns tree;
+  makeset();
+  union(1,2);
+  union(2,3);
+  cout<<connected(1,3); //returns tree;
   cout<<connected(1,4); //returns false;
 
 }
