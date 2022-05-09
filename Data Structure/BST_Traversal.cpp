@@ -61,3 +61,8 @@ int main()
     postOrder(root);
     cout<<endl;
 }
+
+//Output:
+//Pre Order: 1 2 4 5 3
+//In Order: 4 2 5 1 3
+//Post Order: 4 5 2 3 1
